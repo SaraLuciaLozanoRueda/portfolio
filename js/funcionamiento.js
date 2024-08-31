@@ -7,16 +7,16 @@ document.addEventListener('DOMContentLoaded', () => {
             const contenedor = document.querySelector('.container');
             if (contenedor) {
                 contenedor.innerHTML = `
-                 <h1>Portafolio</h1>
+                 <h1 class="sara">Sara</h1>
         <div class="nav">
-            <a class="line" href="/acerca.html">Sobre mi</a>
-            <a href="/proyectos.html">Proyectos</a>
-            <a href="/contactos.html">Contactos</a>
+            <a class="line" href="acerca.html">Sobre mi</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="contactos.html">Contactos</a>
         </div>
 
         <div class="contenedor-acerca">
             <div class="acerca1">
-                <img src="/images/acerca.png" alt="persona_estudia" class="persona_acerca">
+                <img src="./images/acerca.png" alt="persona_estudia" class="persona_acerca">
             </div>
             <div class="acerca">
                 <h6>Soy una persona responsable y comprometida con todos los días superarse a sí misma. Creo que los
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     todos, para "Que nadie te diga que el límite es el cielo, cuando hay huellas en la luna". Mi objetivo
                     es dejar un mensaje significativo en el mundo, contribuyendo a la transformación del panorama
                     tecnológico y social.</h6>
-                <img src="/images/vision.png" alt="">
+                <img src="./images/vision.png" alt="">
             </div>
 
             <div class="mv">
@@ -59,16 +59,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     posibilidades para todos, asegurándome de que nadie se sienta limitado por las barreras tradicionales.
                     Al hacerlo, espero dejar un legado significativo que demuestre que, con la determinación correcta, no
                     hay fronteras que no se puedan superar.</h6>
-                <img src="/images/mision.png" alt="">
+                <img src="./images/mision.png" alt="">
             </div>
         </div>
         <h2>Competencias</h2>
         <div class="container_valores">
-            <span><img src="/images/comprobado.png" alt="">Trabajo en equipo</span>
-            <span><img src="/images/comprobado.png" alt="">Autodidacta</span>
-            <span><img src="/images/comprobado.png" alt="">Adaptabilidad</span>
-            <span><img src="/images/comprobado.png" alt="">Empatía</span>
-            <span><img src="/images/comprobado.png" alt="">Creatividad</span>
+            <span><img src="./images/comprobado.png" alt="">Trabajo en equipo</span>
+            <span><img src="./images/comprobado.png" alt="">Autodidacta</span>
+            <span><img src="./images/comprobado.png" alt="">Adaptabilidad</span>
+            <span><img src="./images/comprobado.png" alt="">Empatía</span>
+            <span><img src="./images/comprobado.png" alt="">Creatividad</span>
         </div>
                 `;
             }
