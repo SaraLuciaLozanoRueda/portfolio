@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif; /* Cambiar la fuente a Montserrat */
+    
+}
+
+body {
+    background-color: var(--rosa);
+    margin: 2%;
+    color: var(--negro); /* Añadir color negro para el texto principal */
+}
+
+:root {
+    --blanco: #ffffff;
+    --negro: #000000; /* Un negro menos intenso para que sea más suave a la vista */
+    --rosa: #E1CCBE;
+    --marron: #757263;
+    --gris: #EEEDEB;
+    --azul: #3A506B; /* Nuevo color para detalles */
+}
+
+/*TEXTO NORMAL*/
+h6{
+    font-weight: 100;
+    margin-top: 5%;
+    font-size: 1.2rem;
+    color: var(--negro);
+    text-align: justify;
+}
+/*NAVEGADOR*/
+a{
+    font-weight: 300;
+    margin: 1%;
+    font-size: 1rem;
+    color: var(--negro);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+a:hover{
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-radius: 15px;
+}
+.line{
+    border-bottom: 1px solid var(--negro);
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 3rem;
+}
+/*TITULOS CENTRADOS*/
+h2{
+    color: var(--negro);
+    text-align: center;
+    font-size: 2rem;
+}
+/* PAGINA DE INICIO */
+.contenedor{
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedor-info{
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#siguiente{
+    background-color: var(--negro);
+    color: var(--blanco);
+    border: none;
+    border-radius: 20px ;
+    width: 40%;
+    height: 8%;
+    margin-top: 10%;
+}
+
+.persona{
+    width: 95%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*ACERCA DE MI*/
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.contenedor-acerca {
+    display: flex;
+    margin-right: 5%;
+}
+.acerca {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.persona_acerca {
+    width: 60%;
+    height: 100%;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra para darle un efecto de profundidad */
+}
+
+
+.acerca1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+.hoja_vida{
+    background-color: var(--negro);
+    width: 30%;
+    height:100%;
+    color: var(--blanco);
+    border-radius: 100px;
+    border: none;
+}
+
+/*MISION Y VISION*/
+.contendor_vm{
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.mv{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_mv{
+    width: 30%;
+    margin: 10px;
+}
+
+
+.mv h2{
+    border-bottom: 2px solid var(--negro)
+}
+
+/*VALORES*/
+.container_valores{
+    margin: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+span{
+    font-size: 1.3rem;
+}
+
+span img{
+    margin-right: 5px;
+}
+
+/*TECNICAS*/
+.container_conocimientos{
+    display: flex;
+    flex-direction: row;
+    margin: 3%;
+}
+.tecnicas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+
+/*CONTACTOS*/
+.contenedor-contacto img{
+    width: 8%;
+    margin: 1%;
+}
+
+.contenedor-contacto{
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-contacto h6{
+    text-align: center;
+}
+
+/*PROYECTOS*/
+.Lenguajes{
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Lenguajes {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill{
+    text-align: center;
+}
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
+}
+
+
+.Proyectos {
+    padding: 20px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.project-description {
+    padding: 0 10px 10px;
+    font-size: 0.9em;
+    color: #555;
+}
