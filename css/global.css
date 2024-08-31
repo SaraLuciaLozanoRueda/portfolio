@@ -21,6 +21,19 @@ body {
     --azul: #3A506B; /* Nuevo color para detalles */
 }
 
+.sara{
+    font-family: 'Arial', sans-serif; /* Fuente legible y moderna */
+    font-size: 2.5em; /* Tamaño del texto del logo */
+    font-weight: bold; /* Negrita para el texto */
+    color: #333; /* Color de texto oscuro */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 10px 20px; /* Espacio interno alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    top: 20px; /* Espacio desde la parte superior */
+    left: 20px; /* Espacio desde el borde izquierdo */
+}
+
+
 /*TEXTO NORMAL*/
 h6{
     font-weight: 100;
@@ -83,6 +96,7 @@ h2{
     width: 40%;
     height: 8%;
     margin-top: 10%;
+    cursor:pointer;
 }
 
 .persona{
@@ -223,25 +237,23 @@ span img{
     text-align: center;
 }
 
-/*PROYECTOS*/
-.Lenguajes{
-    margin: 2%;
-    display: flex;
-    flex-direction: column;
-}
 
 .Lenguajes {
+    margin: 2%;
     padding: 20px;
     margin-bottom: 20px;
+    text-align: center; /* Centra el contenido dentro del contenedor */
 }
 
-.skills{
+.skills {
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos hijos en el contenedor */
     gap: 20px;
 }
 
-.skill{
+.skill {
     text-align: center;
 }
 
@@ -257,24 +269,33 @@ span img{
 
 .project-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+   
 }
 
+
 .project {
+    margin-top: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    max-width: 300px;
+    max-width: 300px; /* Ancho máximo para todas las tarjetas */
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: space-between; /* Espacia los elementos uniformemente */
+    height: 430px; /* Establece una altura fija para todas las tarjetas */
 }
 
 .project-image {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 60%; /* Ajusta la altura de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
 }
 
 .project-title {
@@ -286,4 +307,72 @@ span img{
     padding: 0 10px 10px;
     font-size: 0.9em;
     color: #555;
+    flex: 1; /* Permite que la descripción se expanda para llenar el espacio disponible */
+}
+
+.project-button {
+    display: inline-block;
+    padding: 5px 10px; /* Tamaño reducido del botón */
+    font-size: 0.9em; /* Tamaño de fuente reducido */
+    color: #fff;
+    background-color: #007bff; /* Color del botón */
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin: 10px 0; /* Espacio arriba y abajo del botón */
+    align-self: center; /* Centra el botón horizontalmente */
+}
+
+.project-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .contenedor-info {
+        width: 100%;
+    }
+
+    .acerca {
+        flex-direction: column;
+    }
+
+    .persona_acerca {
+        width: 100%;
+    }
+
+    .mv {
+        width: 100%;
+    }
+
+    .container_valores, .container_conocimientos {
+        flex-direction: column;
+    }
+
+    .tecnicas {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sara {
+        font-size: 1.5em; /* Ajusta el tamaño del texto en pantallas muy pequeñas */
+        top: 10px;
+        left: 10px;
+    }
+
+    .project {
+        max-width: 100%; /* Ajusta el ancho de los proyectos en pantallas pequeñas */
+    }
+
+    .project-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
 }
